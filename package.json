@@ -1,0 +1,22 @@
+{
+  "name": "weathershopper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prinz-git/weathershopper.git"
+  },
+  "author": "Prince George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prinz-git/weathershopper/issues"
+  },
+  "homepage": "https://github.com/prinz-git/weathershopper#readme",
+  "devDependencies": {
+    "cypress": "^12.17.2"
+  }
+}
