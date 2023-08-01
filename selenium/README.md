@@ -5,6 +5,7 @@ Visit http://weathershopper.pythonanywhere.com. Each page will have an 'i' icon 
 <ul>
 <li>Python</li>
 <li>Selenium</li>
+<li>Docker</li>
 </ul>
 
 # Major tasks done by Selenium
@@ -19,4 +20,8 @@ Visit http://weathershopper.pythonanywhere.com. Each page will have an 'i' icon 
 <li> Waiting for form submission </li>
 </ul>
 
+# Docker command for testing
+
+* docker build .
+* docker compose up
 

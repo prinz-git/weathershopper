@@ -19,10 +19,13 @@ class WeatherShopper:
         options = FirefoxOptions()
         options.log.level = "trace"
         options.add_argument("-devtools")
+
+        """Please remove this line for UI rendering if in local and add if in Docker"""
         options.add_argument("--headless")
+
         self.driver = webdriver.Firefox(options)
         self.driver.maximize_window()
-        
+
         self.email = data['EMAIL']
         self.card_number = data['CARD_NUMBER']
         self.card_year = data['CARD_YEAR']
