@@ -3,7 +3,7 @@ describe('WeatherShopper', () => {
 
   beforeEach(() => {
     cy.visit('https://weathershopper.pythonanywhere.com/');
-    cy.viewport('macbook-13');
+    //cy.viewport('macbook-13');
   });
 
   it('should make a successful purchase based on the weather', () => {
