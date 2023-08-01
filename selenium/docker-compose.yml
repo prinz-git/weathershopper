@@ -1,0 +1,10 @@
+version: "1.0"
+services:
+
+  chrome:
+    container_name: "selenium-test-container"
+    build: .
+    shm_size: '2gb'
+    restart: always
+    ports:
+      - "4444:4444"
