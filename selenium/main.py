@@ -8,15 +8,21 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
 
 class WeatherShopper:
 
     def __init__(self, data):
         """Initialize data"""
-        s = Service('chromedriver')
         load_dotenv()
-        self.driver = webdriver.Chrome()
+        options = FirefoxOptions()
+        options.log.level = "trace"
+        options.add_argument("-devtools")
+        options.add_argument("--headless")
+        self.driver = webdriver.Firefox(options)
+        self.driver.maximize_window()
+        
         self.email = data['EMAIL']
         self.card_number = data['CARD_NUMBER']
         self.card_year = data['CARD_YEAR']
