@@ -1,0 +1,8 @@
+version: "1.0"
+services:
+
+  chrome:
+    container_name: "cypress-test-container"
+    build: .
+    shm_size: '2gb'
+    restart: always
